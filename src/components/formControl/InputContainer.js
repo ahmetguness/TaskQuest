@@ -7,8 +7,16 @@ export default function InputContainer({ onPress }) {
   return (
     <View style={styles.root}>
       <View>
-        <FormControlArea type={"UserName"} inputType={"text"} />
-        <FormControlArea type={"Password"} inputType={"password"} />
+        <FormControlArea
+          type={"UserName"}
+          inputType={"text"}
+          HelperText={"Must be atleast 6 characters."}
+        />
+        <FormControlArea
+          type={"Password"}
+          inputType={"password"}
+          HelperText={"Must be atleast 6 characters."}
+        />
         <SelectBar />
         <HomeButton btnName={"Login"} onPress={onPress} />
       </View>

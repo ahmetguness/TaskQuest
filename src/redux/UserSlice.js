@@ -8,10 +8,14 @@ const UserSlice = createSlice({
   name: "userSlice",
   initialState: {
     userType: "",
+    matchId: "asd",
   },
   reducers: {
     updateUserType(state, action) {
       state.userType = capitalizeFirstLetter(action.payload);
+    },
+    updateMatchId(state, action) {
+      state.matchId = action.payload;
     },
   },
 });

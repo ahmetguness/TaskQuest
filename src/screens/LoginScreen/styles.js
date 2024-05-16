@@ -7,10 +7,11 @@ export const styles = StyleSheet.create({
   textContainer: {
     justifyContent: "center",
     alignItems: "center",
-    marginTop: "50%",
+    marginTop: "30%",
   },
   text: {
     fontWeight: "bold",
     fontSize: 24,
+    marginBottom: "20%"
   },
 });

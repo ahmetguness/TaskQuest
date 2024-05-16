@@ -1,4 +1,4 @@
-import { Alert, Text, View } from "react-native";
+import { Alert, ScrollView, Text, View } from "react-native";
 import InputContainer from "../../components/formControl/InputContainer";
 import { styles } from "./styles";
 import { useSelector } from "react-redux";
@@ -16,11 +16,11 @@ export default function LoginScreen({ navigation }) {
   };
 
   return (
-    <View style={styles.root}>
+    <ScrollView style={styles.root}>
       <View style={styles.textContainer}>
         <Text style={styles.text}>Welcome to TaskQuest</Text>
       </View>
       <InputContainer onPress={handlePress} />
-    </View>
+    </ScrollView>
   );
 }

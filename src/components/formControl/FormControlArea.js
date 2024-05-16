@@ -6,16 +6,16 @@ import {
   WarningOutlineIcon,
 } from "native-base";
 
-export default function FormControlArea({type, inputType}) {
+export default function FormControlArea({type, inputType, HelperText}) {
   return (
-    <Box alignItems="center" marginBottom="6%">
+    <Box alignItems="center" marginBottom="6%" marginTop="6%">
       <Box w="100%" maxWidth="380px">
         <FormControl>
           <Stack mx="4">
             <FormControl.Label>{type}</FormControl.Label>
             <Input type={inputType} defaultValue="" placeholder={type} />
             <FormControl.HelperText>
-              Must be atleast 6 characters.
+              {HelperText}
             </FormControl.HelperText>
             <FormControl.ErrorMessage
               leftIcon={<WarningOutlineIcon size="xs" />}
